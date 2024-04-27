@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SinglePageSite-1</title>
+    <link rel="stylesheet" href="./Style.Css">
+</head>
+
+<body>
+
+    <!-- Nav -->
+    <nav class="TopNav" id="TopNavId">
+        <div class="container">
+            <div class="Logo">
+                <a href="index.html">SinglePage</a>
+
+            </div>
+            <div class="Menu">
+                <a href="#header">Home</a>
+                <a href="#About">About</a>
+                <a href="#WhyUs">Why Us</a>
+                <a href="#Contact">Contact</a>
+                <a href="javascript:void(0)" class="icon" onclick="responsiveMenu()">&#9776;</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+
+    <header id="header">
+        <h2>Welcome To  <span style="color: cadetblue;">Our Website</span></h2>
+        <p>We are the best to create a creative website</p>
+    </header>
+
+    <!-- content -->
+
+    <main>
+
+        <!-- About Us -->
+        <section id="About">
+            <div class="row">
+                <div class="col-66">
+                    <h1 class="FirstTitle">About Us</h1>
+                    <h2 class="SecondTitle">We Are The Best</h2>
+                    <p><span class="ThirdTitle">To Create a Creative website</span>  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid cum obcaecati repellendus voluptatem temporibus corrupti accusantium maxime dolorem officiis. </p>
+                    <button>Read Mrore</button>    
+                </div>
+                <div class="col-33">
+                    <img src="images/about.jpg" alt="about us">
+                </div>
+            </div>
+        </section>
+
+         <!-- Clarity -->
+
+         <section style="background-color: #000;">
+            <div class="row">
+                <div class="col-33">
+                    <img src="images/clarity.jpg" alt="clarity.jpg">
+                </div>
+                <div class="col-66" style="color: #fff;" >
+                    <h1 class="FirstTitle">Clarity</h1>
+                    <h2 class="SecondTitle">Pixels, Who?</h2>
+                    <p><span class="ThirdTitle">To Create a Creative website</span>  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid cum obcaecati repellendus voluptatem temporibus corrupti accusantium maxime dolorem officiis. </p>
+                    <button>Read More</button>    
+                </div>
+                
+            </div>
+        </section>
+
+         <!-- Why Us -->
+         <section id="WhyUs">
+            <div class="row">
+                <div class="col-66">
+                    <h1 class="FirstTitle">Why Us</h1>
+                    <h2 class="SecondTitle">We Are The Best</h2>
+                    <p><span class="ThirdTitle">To Create a Creative website</span>  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid cum obcaecati repellendus voluptatem temporibus corrupti accusantium maxime dolorem officiis. </p>
+                    <button>Read Mrore</button>    
+                </div>
+                <div class="col-33">
+                    <img src="images/about.jpg" alt="aboutus">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+
+    <footer>
+        <section id="Contact">
+            <h1 class="FirstTitle" style="text-align: center;">Contact Form</h1>
+            <form>
+                <label>Name</label>
+                <input type="text" name="" required="">
+    
+                <label>E-mail</label>
+                <input type="email" name="" required="">
+    
+                <textarea rows="10"></textarea>
+                <input type="submit" name="" value="Submit">
+            </form>
+        </section>
+
+        <p>&copy; Copright 2024 Powered by <a href="#" target="_blank">www.ozceliktaha.com</a></p>
+    </footer>
+
+
+   <script type="text/javascript">
+    function responsiveMenu() {
+        var x = document.getElementById("TopNavId");
+        if (x.className === "TopNav") {
+            x.className = x.className +  " responsive";
+        }else{
+            x.className = "TopNav";  
+        }
+        
+    }
+   </script>
+
+
+
+</body>
+</html>
